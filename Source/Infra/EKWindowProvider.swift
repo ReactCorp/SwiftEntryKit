@@ -165,6 +165,8 @@ final class EKWindowProvider: EntryPresenterDelegate {
             }
         case .custom(window: let window):
             window.makeKeyAndVisible()
+        case .handler(hanlder: let hanlder):
+            hanlder()?.makeKeyAndVisible()
         }
     }
     

@@ -39,11 +39,17 @@ public final class SwiftEntryKit {
         
         /** A given custom window */
         case custom(window: UIWindow)
+
+        /** A handler that returns the window to be rolled back **/
+        case handler(_ handler: RollbackWindowHander)
     }
     
     /** Completion handler for the dismissal method */
     public typealias DismissCompletionHandler = () -> Void
-    
+
+    /** Handler that returns the window to be rolled back **/
+    public typealias RollbackWindowHander = () -> UIWindow?
+
     /** Cannot be instantiated, customized, inherited. */
     private init() {}
     
