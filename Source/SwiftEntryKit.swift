@@ -63,7 +63,7 @@ public final class SwiftEntryKit {
         return EKWindowProvider.shared.entryWindow
     }
 
-    public class var rollbackWindow: RollbackWindow {
+    public class var rollbackWindow: RollbackWindow? {
         return EKWindowProvider.shared.rollbackWindow
     }
     
