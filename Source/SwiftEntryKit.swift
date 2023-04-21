@@ -62,6 +62,10 @@ public final class SwiftEntryKit {
     public class var window: UIWindow? {
         return EKWindowProvider.shared.entryWindow
     }
+
+    public class var rollbackWindow: RollbackWindow {
+        return EKWindowProvider.shared.rollbackWindow
+    }
     
     /**
      Returns true if **any** entry is currently displayed.

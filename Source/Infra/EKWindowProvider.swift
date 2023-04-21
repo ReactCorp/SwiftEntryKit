@@ -32,7 +32,7 @@ final class EKWindowProvider: EntryPresenterDelegate {
     }
     
     /** A window to go back to when the last entry has been dismissed */
-    private var rollbackWindow: SwiftEntryKit.RollbackWindow!
+    var rollbackWindow: SwiftEntryKit.RollbackWindow!
     
     /** The main rollback window to be used internally in case `rollbackWindow`'s value is `.main` */
     private weak var mainRollbackWindow: UIWindow?
